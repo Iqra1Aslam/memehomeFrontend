@@ -1,0 +1,84 @@
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Wallet Modal Styles */
+.wallet-modal-container {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 16px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid #2d2d2d;
+  z-index: 1000;
+}
+
+.wallet-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2d2d2d;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.wallet-modal-close {
+  margin-left: auto;
+  color: #a0a0a0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.wallet-modal-close:hover {
+  color: white;
+}
+
+/* Wallet button states */
+.wallet-multi-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.wallet-multi-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px -1px rgba(139, 92, 246, 0.3), 0 4px 6px -1px rgba(139, 92, 246, 0.2);
+}
+
+.wallet-multi-button:active {
+  transform: translateY(0);
+}
+
+.wallet-multi-button {
+  background: linear-gradient(90deg, #8b5cf6, #ec4899, #6366f1);
+  background-size: 200% 200%;
+  color: white;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.2),
+    0 2px 4px -1px rgba(139, 92, 246, 0.12);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  background-position: 0% 50%;
+}
+
+/* .wallet-multi-button:hover {
+  animation: gradientMove 3s infinite linear;
+  transform: scale(1.05);
+} */
